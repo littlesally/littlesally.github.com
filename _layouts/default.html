@@ -1,7 +1,59 @@
-<html>
-  <title>{{ post.title }}</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+  </head>
   <body>
-    <h2><b>{{ post.title }}</b></h2>
-    {{ content }}
+  <div id="smallheader">
+    <div class="wrapper">
+      <div id="logo">
+        <h1><font color="black">Sally!</font></h1>
+        <!--<a href="/"><img src="/images/ta_logo_inverted.png" alt="Teragon Audio"/></a>-->
+      </div>
+
+      <!--
+      <div id="right">
+        <form method="get" id="searchform" action="#"> 
+          <fieldset class="search"> 
+            <input type="text" class="box" /> 
+            <button class="btn" title="Search">Search</button> 
+          </fieldset> 
+        </form>
+      </div> 
+      -->
+    </div>
+  </div>
+  <div id="contentpart">
+    <div class="wrapper">
+      <!--
+      <ul class="menu">
+        <li class="menuitem"><a href="index.html">Home</a></li>
+        <li class="menuitem"><a href="/software.html">Software</a></li>
+      </ul> 
+      -->
+      <p>&nbsp;</p>
+
+      <div id="content">						
+        <div class="title">
+          <h1>
+            {{ page.title }}
+          </h1>
+        </div>
+
+        <!-- Start content -->
+        {{ content }}
+        <!-- End content -->
+      </div>									
+      <div style="clear:both;"></div>
+        <div id="bottom">
+          <p class="footer">
+          </p>
+        </div>
+      </div>								
+    </div>
   </body>
 </html>
