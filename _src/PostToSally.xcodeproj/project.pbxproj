@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		241FA2271560E33D008410A7 /* PostToSally.icns in Resources */ = {isa = PBXBuildFile; fileRef = 241FA2261560E33D008410A7 /* PostToSally.icns */; };
+		248FEA3C155FEB9B00D4479C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FEA3B155FEB9B00D4479C /* Cocoa.framework */; };
+		248FEA46155FEB9B00D4479C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 248FEA44155FEB9B00D4479C /* InfoPlist.strings */; };
+		248FEA48155FEB9B00D4479C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FEA47155FEB9B00D4479C /* main.m */; };
+		248FEA4F155FEB9B00D4479C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248FEA4E155FEB9B00D4479C /* AppDelegate.m */; };
+		248FEA52155FEB9B00D4479C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248FEA50155FEB9B00D4479C /* MainMenu.xib */; };
+		248FEA5B15600A8300D4479C /* Collaboration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248FEA5A15600A8300D4479C /* Collaboration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		241FA2261560E33D008410A7 /* PostToSally.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PostToSally.icns; sourceTree = SOURCE_ROOT; };
+		248FEA37155FEB9B00D4479C /* PostToSally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostToSally.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FEA3B155FEB9B00D4479C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		248FEA3E155FEB9B00D4479C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		248FEA3F155FEB9B00D4479C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		248FEA40155FEB9B00D4479C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		248FEA43155FEB9B00D4479C /* PostToSally-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PostToSally-Info.plist"; sourceTree = "<group>"; };
+		248FEA45155FEB9B00D4479C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		248FEA47155FEB9B00D4479C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		248FEA49155FEB9B00D4479C /* PostToSally-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PostToSally-Prefix.pch"; sourceTree = "<group>"; };
+		248FEA4D155FEB9B00D4479C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		248FEA4E155FEB9B00D4479C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		248FEA51155FEB9B00D4479C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		248FEA5A15600A8300D4479C /* Collaboration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Collaboration.framework; path = System/Library/Frameworks/Collaboration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		248FEA34155FEB9B00D4479C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FEA5B15600A8300D4479C /* Collaboration.framework in Frameworks */,
+				248FEA3C155FEB9B00D4479C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		248FEA2C155FEB9B00D4479C = {
+			isa = PBXGroup;
+			children = (
+				248FEA41155FEB9B00D4479C /* PostToSally */,
+				248FEA3A155FEB9B00D4479C /* Frameworks */,
+				248FEA38155FEB9B00D4479C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		248FEA38155FEB9B00D4479C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248FEA37155FEB9B00D4479C /* PostToSally.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		248FEA3A155FEB9B00D4479C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				248FEA3E155FEB9B00D4479C /* AppKit.framework */,
+				248FEA3F155FEB9B00D4479C /* CoreData.framework */,
+				248FEA40155FEB9B00D4479C /* Foundation.framework */,
+				248FEA5A15600A8300D4479C /* Collaboration.framework */,
+				248FEA3B155FEB9B00D4479C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		248FEA41155FEB9B00D4479C /* PostToSally */ = {
+			isa = PBXGroup;
+			children = (
+				248FEA4D155FEB9B00D4479C /* AppDelegate.h */,
+				248FEA4E155FEB9B00D4479C /* AppDelegate.m */,
+				248FEA42155FEB9B00D4479C /* Supporting Files */,
+			);
+			path = PostToSally;
+			sourceTree = "<group>";
+		};
+		248FEA42155FEB9B00D4479C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				241FA2261560E33D008410A7 /* PostToSally.icns */,
+				248FEA47155FEB9B00D4479C /* main.m */,
+				248FEA49155FEB9B00D4479C /* PostToSally-Prefix.pch */,
+				248FEA43155FEB9B00D4479C /* PostToSally-Info.plist */,
+				248FEA44155FEB9B00D4479C /* InfoPlist.strings */,
+				248FEA50155FEB9B00D4479C /* MainMenu.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		248FEA36155FEB9B00D4479C /* PostToSally */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248FEA55155FEB9C00D4479C /* Build configuration list for PBXNativeTarget "PostToSally" */;
+			buildPhases = (
+				248FEA33155FEB9B00D4479C /* Sources */,
+				248FEA34155FEB9B00D4479C /* Frameworks */,
+				248FEA35155FEB9B00D4479C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostToSally;
+			productName = PostToSally;
+			productReference = 248FEA37155FEB9B00D4479C /* PostToSally.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		248FEA2E155FEB9B00D4479C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 248FEA31155FEB9B00D4479C /* Build configuration list for PBXProject "PostToSally" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 248FEA2C155FEB9B00D4479C;
+			productRefGroup = 248FEA38155FEB9B00D4479C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				248FEA36155FEB9B00D4479C /* PostToSally */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		248FEA35155FEB9B00D4479C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FEA46155FEB9B00D4479C /* InfoPlist.strings in Resources */,
+				248FEA52155FEB9B00D4479C /* MainMenu.xib in Resources */,
+				241FA2271560E33D008410A7 /* PostToSally.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		248FEA33155FEB9B00D4479C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FEA48155FEB9B00D4479C /* main.m in Sources */,
+				248FEA4F155FEB9B00D4479C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		248FEA44155FEB9B00D4479C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248FEA45155FEB9B00D4479C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		248FEA50155FEB9B00D4479C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248FEA51155FEB9B00D4479C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		248FEA53155FEB9C00D4479C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		248FEA54155FEB9C00D4479C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		248FEA56155FEB9C00D4479C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PostToSally/PostToSally-Prefix.pch";
+				INFOPLIST_FILE = "PostToSally/PostToSally-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		248FEA57155FEB9C00D4479C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PostToSally/PostToSally-Prefix.pch";
+				INFOPLIST_FILE = "PostToSally/PostToSally-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		248FEA31155FEB9B00D4479C /* Build configuration list for PBXProject "PostToSally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FEA53155FEB9C00D4479C /* Debug */,
+				248FEA54155FEB9C00D4479C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248FEA55155FEB9C00D4479C /* Build configuration list for PBXNativeTarget "PostToSally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FEA56155FEB9C00D4479C /* Debug */,
+				248FEA57155FEB9C00D4479C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 248FEA2E155FEB9B00D4479C /* Project object */;
+}
