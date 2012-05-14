@@ -16,6 +16,7 @@
 @synthesize subjectTextField = _subjectTextField;
 @synthesize pictureTextField = _pictureTextField;
 @synthesize entryTextField = _entryTextField;
+@synthesize statusTextField = _statusTextField;
 
 @synthesize previewImageView = _previewImageView;
 
@@ -27,11 +28,20 @@
   return YES;
 }
 
+- (void)startTask:(NSString *)task {
+  [_statusTextField setStringValue:task];
+  NSLog(@"Staring task: %@", task);
+}
+
+- (void)stopTask {
+  [_statusTextField setStringValue:@""];
+}
+
 #define LIVE_GIT_OPERATIONS 1
 
 - (void)gitPull {
 #if LIVE_GIT_OPERATIONS
-  NSLog(@"Pulling from repo...");
+  [self startTask:@"Pulling from GitHub"];
   NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
   NSString *repoPath = [bundlePath stringByAppendingString:@"/../../"];
   NSTask *task = [[[NSTask alloc] init] autorelease];
@@ -40,12 +50,13 @@
   task.arguments = [NSArray arrayWithObject:@"pull"];
   [task launch];
   [task waitUntilExit];
+  [self stopTask];
 #endif
 }
 
 - (void)gitPush {
 #if LIVE_GIT_OPERATIONS
-  NSLog(@"Pushing to repo...");
+  [self startTask:@"Pushing to GitHub"];
   NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
   NSString *repoPath = [bundlePath stringByAppendingString:@"/../../"];
   NSTask *task = [[[NSTask alloc] init] autorelease];
@@ -54,12 +65,13 @@
   task.arguments = [NSArray arrayWithObject:@"push"];
   [task launch];
   [task waitUntilExit];
+  [self stopTask];
 #endif
 }
 
 - (void)gitCommit:(NSString*)message {
 #if LIVE_GIT_OPERATIONS
-  NSLog(@"Committing to git");
+  [self startTask:@"Committing files"];
   NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
   NSString *repoPath = [bundlePath stringByAppendingString:@"/../../"];
   NSTask *task = [[[NSTask alloc] init] autorelease];
@@ -68,12 +80,13 @@
   task.arguments = [NSArray arrayWithObjects:@"commit", @"-m", message, nil];
   [task launch];
   [task waitUntilExit];
+  [self stopTask];
 #endif
 }
 
 - (void)addFileToGit:(NSString*)filename {
 #if LIVE_GIT_OPERATIONS
-  NSLog(@"Adding %@ to git", filename);
+  [self startTask:[@"Adding file: " stringByAppendingString:filename]];
   NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
   NSString *repoPath = [bundlePath stringByAppendingString:@"/../../"];
   NSTask *task = [[[NSTask alloc] init] autorelease];
@@ -82,6 +95,7 @@
   task.arguments = [NSArray arrayWithObjects:@"add", filename, nil];
   [task launch];
   [task waitUntilExit];
+  [self stopTask];
 #endif
 }
 
@@ -98,6 +112,16 @@
   [_pictureTextField setStringValue:openPanel.filename];
   NSImage *previewImage = [[[NSImage alloc] initWithContentsOfURL:openPanel.URL] autorelease];
   [_previewImageView setImage:previewImage];
+}
+
+- (void)resizePicture:(NSString *)pictureFilename {
+  [self startTask:@"Resizing picture"];
+  NSTask *task = [[[NSTask alloc] init] autorelease];
+  task.launchPath = @"/usr/local/bin/mogrify";
+  task.arguments = [NSArray arrayWithObjects:@"-resize", @"800x800", pictureFilename, nil];
+  [task launch];
+  [task waitUntilExit];
+  [self stopTask];
 }
 
 - (IBAction)goButtonPressed:(id)sender {
@@ -138,8 +162,9 @@
     NSLog(@"Pic dest: %@", pictureDest);
     NSArray *arguments = [NSArray arrayWithObjects:@"-v", [_pictureTextField stringValue], pictureDest, nil];
     [NSTask launchedTaskWithLaunchPath:@"/bin/cp" arguments:arguments];
+    [self resizePicture:pictureDest];
     fprintf(postFile, "![Picture](/images/%s)\n\n", [pictureDestFilename cStringUsingEncoding:NSASCIIStringEncoding]);
-    [self addFileToGit:[@"./images/" stringByAppendingString:pictureDestFilename]];
+    [self addFileToGit:pictureDest];
   }
 
   fprintf(postFile, "%s\n", [[_entryTextField stringValue] cStringUsingEncoding:NSASCIIStringEncoding]);

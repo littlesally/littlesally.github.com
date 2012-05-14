@@ -15,6 +15,7 @@
 @property (assign) IBOutlet NSTextField *subjectTextField;
 @property (assign) IBOutlet NSTextField *pictureTextField;
 @property (assign) IBOutlet NSTextField *entryTextField;
+@property (assign) IBOutlet NSTextField *statusTextField;
 
 @property (assign) IBOutlet NSImageView *previewImageView;
 
