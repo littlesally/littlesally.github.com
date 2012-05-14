@@ -11,10 +11,13 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+
 @property (assign) IBOutlet NSTextField *subjectTextField;
 @property (assign) IBOutlet NSTextField *pictureTextField;
 @property (assign) IBOutlet NSTextField *entryTextField;
 
+
+- (IBAction)browseButtonPressed:(id)sender;
 - (IBAction)goButtonPressed:(id)sender;
 
 @end

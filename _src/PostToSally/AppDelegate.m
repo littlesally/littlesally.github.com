@@ -82,9 +82,20 @@
 #endif
 }
 
-- (IBAction)goButtonPressed:(id)sender {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   [self gitPull];
+}
 
+- (IBAction)browseButtonPressed:(id)sender {
+  NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+  openPanel.canChooseFiles = YES;
+  openPanel.canChooseDirectories = NO;
+  openPanel.allowsMultipleSelection = NO;
+  [openPanel runModal];
+  [_pictureTextField setStringValue:openPanel.filename];
+}
+
+- (IBAction)goButtonPressed:(id)sender {
   NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
   NSString *postsPath = [bundlePath stringByAppendingString:@"/../../_posts/"];
   NSString *imagesPath = [bundlePath stringByAppendingString:@"/../../images/"];
