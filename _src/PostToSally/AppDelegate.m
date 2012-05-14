@@ -22,6 +22,9 @@
 - (void)dealloc {
   [super dealloc];
 }
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)sender {
+  return YES;
 }
 
 #define LIVE_GIT_OPERATIONS 1
