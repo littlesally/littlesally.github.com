@@ -8,6 +8,8 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>PostToSally</string>
+	<key>CFBundleIconFile</key>
+	<string>PostToSally.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.nikreiman.PostToSally</string>
 	<key>CFBundleInfoDictionaryVersion</key>
