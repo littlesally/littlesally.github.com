@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Insurance and Vet
+title: Useful insurance links
 author: Beata
 ---
 
