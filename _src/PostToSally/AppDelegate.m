@@ -28,6 +28,15 @@
   return YES;
 }
 
+- (BOOL)control:(NSControl *)control textView:(NSTextView *)fieldEditor doCommandBySelector:(SEL)commandSelector {
+  BOOL retval = NO;
+  if(commandSelector == @selector(insertNewline:)) {
+    retval = YES;
+    [fieldEditor insertNewlineIgnoringFieldEditor:nil];
+  }
+  return retval;
+}
+
 - (void)startTask:(NSString *)task {
   [_statusTextField setStringValue:task];
   NSLog(@"Staring task: %@", task);
