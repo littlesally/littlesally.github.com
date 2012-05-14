@@ -176,8 +176,14 @@
     [self addFileToGit:pictureDest];
   }
 
+  if([_entryTextField stringValue] == nil) {
+    [self startTask:@"Error making post!"];
+    return;
+  }
+
   fprintf(postFile, "%s\n", [[_entryTextField stringValue] cStringUsingEncoding:NSASCIIStringEncoding]);
   fclose(postFile);
+
   [self addFileToGit:postFileName];
   [self gitCommit:subject];
   [self gitPush];
