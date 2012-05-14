@@ -16,6 +16,7 @@
 @property (assign) IBOutlet NSTextField *pictureTextField;
 @property (assign) IBOutlet NSTextField *entryTextField;
 
+@property (assign) IBOutlet NSImageView *previewImageView;
 
 - (IBAction)browseButtonPressed:(id)sender;
 - (IBAction)goButtonPressed:(id)sender;

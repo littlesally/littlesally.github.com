@@ -12,16 +12,16 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+
 @synthesize subjectTextField = _subjectTextField;
 @synthesize pictureTextField = _pictureTextField;
 @synthesize entryTextField = _entryTextField;
 
+@synthesize previewImageView = _previewImageView;
+
 - (void)dealloc {
   [super dealloc];
 }
-	
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-  // Insert code here to initialize your application
 }
 
 #define LIVE_GIT_OPERATIONS 1
@@ -93,6 +93,8 @@
   openPanel.allowsMultipleSelection = NO;
   [openPanel runModal];
   [_pictureTextField setStringValue:openPanel.filename];
+  NSImage *previewImage = [[[NSImage alloc] initWithContentsOfURL:openPanel.URL] autorelease];
+  [_previewImageView setImage:previewImage];
 }
 
 - (IBAction)goButtonPressed:(id)sender {
