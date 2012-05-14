@@ -43,7 +43,7 @@
 }
 
 - (void)stopTask {
-  [_statusTextField setStringValue:@""];
+  [_statusTextField setStringValue:@"Idle"];
 }
 
 #define LIVE_GIT_OPERATIONS 1
