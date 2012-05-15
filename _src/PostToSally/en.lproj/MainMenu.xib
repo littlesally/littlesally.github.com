@@ -241,7 +241,7 @@
 				<string key="NSName">_NSMainMenu</string>
 			</object>
 			<object class="NSWindowTemplate" id="972006081">
-				<int key="NSWindowStyleMask">15</int>
+				<int key="NSWindowStyleMask">7</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{335, 390}, {546, 501}}</string>
 				<int key="NSWTFlags">1954021376</int>
@@ -320,7 +320,7 @@
 							<string key="NSFrame">{{20, 48}, {506, 326}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="1025476589"/>
+							<reference key="NSNextKeyView" ref="401266303"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="89629127">
 								<int key="NSCellFlags">-1805517311</int>
@@ -346,7 +346,7 @@
 							<reference key="NSNextKeyView" ref="694226618"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="49801761">
-								<int key="NSCellFlags">-2068709823</int>
+								<int key="NSCellFlags">-2072904127</int>
 								<int key="NSCellFlags2">272630784</int>
 								<string key="NSContents"/>
 								<reference key="NSSupport" ref="70860212"/>
@@ -441,7 +441,7 @@
 							<string key="NSFrame">{{424, 379}, {105, 105}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="401266303"/>
+							<reference key="NSNextKeyView" ref="247950341"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSImageCell" key="NSCell" id="68797526">
 								<int key="NSCellFlags">130560</int>
@@ -456,10 +456,10 @@
 						<object class="NSTextField" id="401266303">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 62}, {329, 17}}</string>
+							<string key="NSFrame">{{17, 22}, {324, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="247950341"/>
+							<reference key="NSNextKeyView" ref="1025476589"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="436320329">
 								<int key="NSCellFlags">68288064</int>
@@ -470,6 +470,7 @@
 									<double key="NSSize">11</double>
 									<int key="NSfFlags">16</int>
 								</object>
+								<string key="NSPlaceholderString">Idle</string>
 								<reference key="NSControlView" ref="401266303"/>
 								<reference key="NSBackgroundColor" ref="1069376296"/>
 								<reference key="NSTextColor" ref="91168309"/>
@@ -795,10 +796,10 @@
 							<reference ref="668493223"/>
 							<reference ref="1069812742"/>
 							<reference ref="560618432"/>
-							<reference ref="401266303"/>
 							<reference ref="1025476589"/>
 							<reference ref="247950341"/>
 							<reference ref="694226618"/>
+							<reference ref="401266303"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
