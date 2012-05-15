@@ -124,6 +124,11 @@
 }
 
 - (void)resizePicture:(NSString *)pictureFilename {
+  NSImage *previewImage = _previewImageView.image;
+  if(previewImage.size.width < 800 && previewImage.size.height < 800) {
+    return;
+  }
+
   [self startTask:@"Resizing picture"];
   NSTask *task = [[[NSTask alloc] init] autorelease];
   task.launchPath = @"/usr/local/bin/mogrify";
