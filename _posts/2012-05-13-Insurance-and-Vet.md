@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Useful insurance links
+title: Useful links for later :-)
 author: Beata
 ---
 
