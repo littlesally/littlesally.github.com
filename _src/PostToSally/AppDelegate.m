@@ -109,7 +109,23 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+  CGFloat windowWidth = [userDefaults floatForKey:kPreferenceKeyWindowWidth];
+  CGFloat windowHeight = [userDefaults floatForKey:kPreferenceKeyWindowHeight];
+  if(windowWidth > 0 && windowHeight > 0) {
+    NSRect windowFrame = self.window.frame;
+    windowFrame.size.width = windowWidth;
+    windowFrame.size.height = windowHeight;
+    [self.window setFrame:windowFrame display:NO];
+  }
+
   [self gitPull];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
+  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+  [userDefaults setFloat:self.window.frame.size.width forKey:kPreferenceKeyWindowWidth];
+  [userDefaults setFloat:self.window.frame.size.height forKey:kPreferenceKeyWindowHeight];
 }
 
 - (IBAction)browseButtonPressed:(id)sender {

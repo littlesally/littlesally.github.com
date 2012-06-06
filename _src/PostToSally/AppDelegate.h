@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+static NSString *const kPreferenceKeyWindowWidth = @"windowFrameWidth";
+static NSString *const kPreferenceKeyWindowHeight = @"windowFrameHeight";
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;

@@ -241,9 +241,9 @@
 				<string key="NSName">_NSMainMenu</string>
 			</object>
 			<object class="NSWindowTemplate" id="972006081">
-				<int key="NSWindowStyleMask">7</int>
+				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {546, 501}}</string>
+				<string key="NSWindowRect">{{106, 275}, {546, 501}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">PostToSally</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -254,7 +254,7 @@
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSTextField" id="272688131">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">266</int>
 							<string key="NSFrame">{{77, 459}, {342, 22}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
@@ -293,7 +293,7 @@
 						</object>
 						<object class="NSButton" id="1025476589">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">289</int>
 							<string key="NSFrame">{{421, 12}, {111, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
@@ -316,7 +316,7 @@
 						</object>
 						<object class="NSTextField" id="247950341">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">274</int>
 							<string key="NSFrame">{{20, 48}, {506, 326}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
@@ -339,7 +339,7 @@
 						</object>
 						<object class="NSTextField" id="509621726">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">266</int>
 							<string key="NSFrame">{{77, 427}, {342, 22}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
@@ -407,7 +407,7 @@
 						</object>
 						<object class="NSButton" id="694226618">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">265</int>
 							<string key="NSFrame">{{345, 380}, {74, 25}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
@@ -429,7 +429,7 @@
 						</object>
 						<object class="NSImageView" id="560618432">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">265</int>
 							<set class="NSMutableSet" key="NSDragTypes">
 								<string>Apple PDF pasteboard type</string>
 								<string>Apple PICT pasteboard type</string>
@@ -455,7 +455,7 @@
 						</object>
 						<object class="NSTextField" id="401266303">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">292</int>
 							<string key="NSFrame">{{17, 22}, {324, 17}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
