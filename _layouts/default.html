@@ -8,40 +8,21 @@
     <link rel="stylesheet" href="/css/default.css" type="text/css" />
   </head>
   <body>
-  <div id="smallheader">
-    <div class="wrapper">
-      <div id="logo">
-        <h1><font color="black"><a href="/">Sally, the little border terrier!</a></font></h1>
-        <!--<a href="/"><img src="/images/ta_logo_inverted.png" alt="Teragon Audio"/></a>-->
-      </div>
-
-      <!--
-      <div id="right">
-        <form method="get" id="searchform" action="#"> 
-          <fieldset class="search"> 
-            <input type="text" class="box" /> 
-            <button class="btn" title="Search">Search</button> 
-          </fieldset> 
-        </form>
-      </div> 
-      -->
-    </div>
+  <div class="bigheader" align="center">
+    <a href="/"><img src="/images/Sally_banner.png" alt="Sally, the little border terrier"/></a>
   </div>
   <div id="contentpart">
     <div class="wrapper">
-      <!--
-      <ul class="menu">
-        <li class="menuitem"><a href="index.html">Home</a></li>
-        <li class="menuitem"><a href="/software.html">Software</a></li>
-      </ul> 
-      -->
       <p>&nbsp;</p>
 
-      <div id="content">						
+      <div id="content">
         <div class="title">
           <h1>
             {{ page.title }}
           </h1>
+          <h4>
+            {{ page.date | date: "%B %d, %Y" }}
+          </h4>
         </div>
 
         <!-- Start content -->
