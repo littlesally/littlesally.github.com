@@ -4,8 +4,7 @@ title: Counting down! Little bit over a week to go
 author: Beata
 ---
 
-![Picture](/images/2012-06-28-Counting-down!-Little-bit-over-a-week-to-go.JPG)
-There will be exactly six puppyless days in our lives. I can’t believe it!
+There will be exactly eight puppyless days in our lives. I can’t believe it!
 
 Sally, the little “charm-troll” as they say in Sweden, totally wins me every time I see her. Last time she licked my face practically at the doorstep of Tina’s apartment (maybe I am sick, but I find it super cute) and this time she decided to take a nap in my arms. You can see here her tired puppy eyes when I had to wake her up for the little photo-shoot. It is clear which one of the two of us is more excited about this pic. 
 
