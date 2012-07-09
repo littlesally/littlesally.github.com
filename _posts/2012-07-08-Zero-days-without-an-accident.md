@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 0 days without an accident
+title: Zero days without an accident
 author: Nik Reiman
 ---
 
